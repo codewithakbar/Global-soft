@@ -1,0 +1,59 @@
+.nav {
+    width: 1140px;
+    margin: 0 auto;
+    padding: 25px 0px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav .navLeft {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.nav .navLeft img {
+    width: 168px;
+}
+
+.nav .navLeft .NavMenu {
+    display: flex;
+    gap: 30px;
+}
+
+.nav .navLeft .NavMenu li {
+    font-size: 16px;
+    color: white;
+    cursor: pointer;
+    user-select: none;
+}
+
+.nav .navRight {
+    display: flex;
+    align-items: center;
+    gap: 25px
+}
+
+.nav .navRight .leng {
+    width: 80px;
+    height: 44px;
+    border: 1px solid white;
+    background: transparent;
+    color: white;
+    padding: 3px;
+    cursor: pointer;
+    border-radius: 7px;
+ }
+
+ .nav .navRight .leng option {
+    color: white;
+    font-size: 16px;
+ }
+
+ .nav .navRight .contactUs {
+    font-size: 16px;
+    color: white;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+ }
