@@ -1,0 +1,114 @@
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+main header {
+    width: 1140px;
+    margin: 0 auto;
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+main header img {
+    width: 20%;
+}
+
+main header .headerTitle {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+}
+
+main header .headerTitle h1 {
+    font-size: 34px;
+    font-weight: 500;
+    color: #FFFFFF;
+}
+
+main header .headerTitle p {
+    color: #ffffffb5;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+main header .headerTitle button {
+    width: 150px;
+    border: none;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 16px;
+    color: #02CCCE;
+    cursor: pointer;
+}
+
+main header .headerTitle button img {
+    width: 25px;
+    height: 25px;
+    padding: 5px;
+    border: 1px solid #02CCCE;
+    border-radius: 50%;
+}
+
+main .client {
+    width: 1140px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    gap: 26px;
+}
+
+main .client .clientCard {
+    width: auto;
+    height: 317px;
+    background-color: #20282B;
+    border-radius: 44px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: white;
+}
+
+main .client .clientCard p {
+    width: 263px;
+}
+
+main .client .clientCardPro {
+    display: flex;
+    padding: 24px;
+    gap: 20px;
+    border-radius: 44px;
+    background-color: #20282B;
+}
+
+main .client .clientCard img {
+    width: 100px;
+    align-self: flex-end;
+}
+
+main .client .plus {
+    flex-grow: 1;
+}
+
+main .client .clientCardPro .clientCardProLeft {
+    width: 134px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: white;
+}
+
+main .client .clientCardPro .clientCardProRight {
+    width: 263px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: white;
+}
