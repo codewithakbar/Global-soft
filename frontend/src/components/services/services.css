@@ -1,0 +1,86 @@
+.services {
+    width: 1140px;
+    margin: 0 auto;
+    margin-top: 120px;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.services .servicesTexts {
+    width: 850px;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    gap: 12px;
+}
+
+.services .servicesTexts span {
+    color: #FFF;
+    font-size: 34px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.services .servicesTexts p {
+    color: #FFF;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+    opacity: 0.6000000238418579;
+}
+
+.services .servicesCards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.services .servicesCards .servicesCard {
+    width: 363px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 16px;
+}
+
+.services .servicesCards .servicesCard span {
+    color: #FFF;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+
+.services .servicesCards .servicesCard p {
+    color: #FFF;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    width: 321px;
+    opacity: 0.6000000238418579;
+}
+
+.services .servicesCards .servicesCard button {
+    width: 150px;
+    border: none;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 16px;
+    color: #02CCCE;
+    cursor: pointer;
+}
+
+.services .servicesCards .servicesCard button img {
+    width: 25px;
+    height: 25px;
+    padding: 5px;
+    border: 1px solid #02CCCE;
+    border-radius: 50%;
+}

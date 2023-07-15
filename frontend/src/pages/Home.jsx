@@ -3,6 +3,8 @@ import rigthIcon from '../access/icons/right.svg'
 import teamImg from '../access/images/team.png'
 import clientImg1 from '../access/images/client1.png'
 import clientImg2 from '../access/images/client2.png'
+import workImg from '../access/images/work.png'
+import Services from '../components/services/Services'
 
 export default function Home() {
     return (
@@ -44,6 +46,29 @@ export default function Home() {
                     </div>
                 </div>
             </div>
+            <div className="works">
+                <div className="workInfoCard">
+                    <div className="workInfoCardTop">
+                        <span>Why work with us & how we work?</span>
+                        <div className="btns">
+                            <button>Creative</button>
+                            <button>Out of the Box</button>
+                        </div>
+                    </div>
+                    <div className="workInfoCardBottom">
+                        <p>A premier global talent management and marketing company focused on the worlds of fashion, beauty, entertainment and art.</p>
+                    </div>
+                </div>
+                <div className="workCards">
+                    <div className="workCard">
+                        <img src={workImg} alt="" />
+                        <span>How we work</span>
+                        <p>Variables are dedicated to store values that may be used as properties across your designs. Their goal is to help you make the design more intelligent; they may become tokens for your design system or adjust prototypes to specific rules. Advanced prototyping with them just became much simpler.</p>
+                        <button>Read more <img src={rigthIcon} alt="" /></button>
+                    </div>
+                </div>
+            </div>
+            <Services />
         </main>
     )
 }
