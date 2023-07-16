@@ -5,6 +5,7 @@ import clientImg1 from '../access/images/client1.png'
 import clientImg2 from '../access/images/client2.png'
 import workImg from '../access/images/work.png'
 import Services from '../components/services/Services'
+import Portfolio from '../components/portifolio/Portifolio'
 
 export default function Home() {
     return (
@@ -69,6 +70,7 @@ export default function Home() {
                 </div>
             </div>
             <Services />
+            <Portfolio />
         </main>
     )
 }

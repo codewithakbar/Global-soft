@@ -1,0 +1,68 @@
+.protfolio {
+    width: 1140px;
+    margin: 0 auto;
+    margin-top: 120px;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.protfolio .protfolioTexts {
+    width: 850px;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    gap: 12px;
+}
+
+.protfolio .protfolioTexts span {
+    color: #FFF;
+    font-size: 34px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.protfolio .protfolioTexts p {
+    color: #FFF;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+    opacity: 0.6000000238418579;
+}
+
+.protfolio .portfolioCards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.protfolio .portfolioCards .protfolioCard {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 23px;
+    align-items: start;
+}
+
+.protfolio .portfolioCards .protfolioCard img {
+    width: auto;
+}
+
+.protfolio .portfolioCards .protfolioCard span {
+    color: #FFF;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.protfolio .portfolioCards .protfolioCard p {
+    color: #FFF;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    opacity: 0.6000000238418579;
+}
