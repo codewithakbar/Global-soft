@@ -11,7 +11,6 @@ export default function Home() {
     return (
         <main>
             <header>
-                <img src="https://static.vecteezy.com/system/resources/previews/009/314/440/original/earth-globe-clip-art-vector-illustration-isolated-free-png.png" alt="" />
                 <div className="headerTitle">
                     <h1>Future solution with us</h1>
                     <p>We create a website of any complexity you need using the best website programming languages and help you quickly realize your ideas.</p>
