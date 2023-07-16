@@ -1,5 +1,5 @@
 import './services.css'
-import ServicesCard from './servicesCard'
+import ServicesCard from './ServicesCard'
 import services1 from '../../access/images/services1.png'
 import services2 from '../../access/images/services2.png'
 import services3 from '../../access/images/services3.png'
