@@ -66,3 +66,44 @@
     line-height: 30px;
     opacity: 0.6000000238418579;
 }
+
+@media screen and (max-width: 420px) {
+    .protfolio {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .protfolio .protfolioTexts {
+        width: 100%;
+    }
+
+    .protfolio .protfolioTexts span {
+        color: #FFF;
+        font-size: 26px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+
+    .protfolio .protfolioTexts p {
+        color: #FFF;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 150%;
+        opacity: 0.6000000238418579;
+    }
+
+    .protfolio .portfolioCards {
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    .protfolio .portfolioCards .protfolioCard {
+        width: 100%;
+    }
+
+    .protfolio .portfolioCards .protfolioCard img  {
+        width: 100%;
+    }
+}

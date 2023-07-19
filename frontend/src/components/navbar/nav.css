@@ -43,17 +43,83 @@
     padding: 3px;
     cursor: pointer;
     border-radius: 7px;
- }
+}
 
- .nav .navRight .leng option {
+.nav .navRight .leng option {
     color: white;
     font-size: 16px;
- }
+}
 
- .nav .navRight .contactUs {
+.nav .navRight .contactUs {
     font-size: 16px;
     color: white;
     border: none;
     background: transparent;
     cursor: pointer;
- }
+}
+
+.navRes {
+    display: none;
+}
+
+@media screen and (max-width: 420px) {
+    .nav {
+        display: none;
+    }
+
+    .navRes {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 20px;
+    }
+
+    .navRes .logo {
+        width: 140px;
+    }
+
+    .navRes button {
+        border: none;
+        background-color: transparent;
+    }
+
+    .navRes .menu {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 60%;
+        height: 100vh;
+        background: #10181B;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        padding: 20px 20px;
+        gap: 34px;
+        z-index: 3;
+    }
+
+    .navRes .menu button {
+        border: none;
+        background-color: transparent;
+    }
+
+    .navRes .close {
+        display: none;
+    }
+
+    .navRes .menu span {
+        color: #FFF;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 20px;
+    }
+
+    .navRes .menu .leng {
+        padding: 10px;
+        border-radius: 14px;
+        background-color: transparent;
+        color: white;
+    }
+}

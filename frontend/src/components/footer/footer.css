@@ -84,3 +84,62 @@ footer .footer .footerBottom span {
     font-weight: 400;
     line-height: normal;
 }
+
+@media screen and (max-width: 420px) {
+    footer {
+        width: 100%;
+        padding: 0px 20px;
+    }
+
+    footer .footerText {
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    footer .footerText span {
+        color: #FFF;
+        text-align: center;
+        font-size: 26px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 37px;
+    }
+
+    .footer .footerTop .null {
+        display: none;
+    }
+
+    .footer .footerTop {
+        flex-wrap: wrap;
+    }
+
+    .footer .footerTop ul {
+        width: 50%;
+    }
+
+    .footer .footerTop ul span {
+        color: #FFF;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+
+    .footer .footerTop ul li {
+        color: #FFF;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        text-decoration-line: underline;
+    }
+
+    .footerBottom span {
+        color: #FFF;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+}

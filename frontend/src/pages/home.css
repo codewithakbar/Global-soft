@@ -223,3 +223,118 @@ main .works .workCards .workCard button img {
     border: 1px solid #02CCCE;
     border-radius: 50%;
 }
+
+
+@media screen and (max-width: 420px) {
+    main {
+        width: 100%;
+    }
+
+    main header {
+        width: 100%;
+        padding: 0px 20px;
+    }
+
+    main header .headerTitle {
+        width: 100%;
+    }
+
+    main header .headerTitle h1 {
+        color: #FFF;
+        font-size: 26px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+
+    main header .headerTitle p {
+        color: #FFF;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 150%;
+        opacity: 0.6000000238418579;
+    }
+
+    main .client {
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 0px;
+    }
+
+    main .client .clientCard {
+        width: 90%;
+    }
+
+    main .client .clientCardPro {
+        width: 90%;
+    }
+
+    main .client .clientCardPro .clientCardProRight {
+        width: auto;
+    }
+
+    main .client .clientCardPro .clientCardProRight img {
+        display: none;
+    }
+
+    main .works {
+        width: 100%;
+        margin-top: 70px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    main .works .workInfoCard {
+        width: 90%;
+        height: auto;
+        padding: 10px;
+        background-color: transparent;
+    }
+
+    main .works .workInfoCard .workInfoCardTop span {
+        color: #FFF;
+        font-size: 26px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 160%;
+    }
+
+    main .works .workInfoCard .workInfoCardBottom p {
+        display: none;
+    }
+
+    main .works .workCards {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        padding: 0px 20px;
+    }
+
+    main .works .workCards .workCard {
+        width: 90%;
+    }
+
+    main .works .workCards .workCard img {
+        width: 90%;
+    }
+
+    main .works .workCards .workCard span {
+        color: #FFF;
+        font-size: 26px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 160%;
+    }
+
+    main .works .workCards .workCard p {
+        color: #FFF;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        opacity: 0.6000000238418579;
+    }
+}

@@ -24,7 +24,7 @@ export default function Footer() {
                         <li>Instagram</li>
                         <li>Telegram</li>
                     </ul>
-                    <ul>
+                    <ul className='null'>
                         <span>Because it matters </span>
                     </ul>
                 </div>
