@@ -37,7 +37,7 @@ export default function Navbar() {
                         <option value="eng">ENG</option>
                         <option value="rus">RUS</option>
                     </select>
-                    <button className="contactUs">{leng == 'uzb' ? "Biz bilan bog'lanish" : "Contact us"}</button>
+                    <button className="contactUs">+998 97 603 64 64</button>
                 </div>
             </div>
             <div className="navRes">
@@ -49,11 +49,11 @@ export default function Navbar() {
                     <span>{leng == 'uzb' ? "Xizmatlar" : "Services"}</span>
                     <span>{leng == 'uzb' ? "Portfel" : "Porfolio"}</span>
                     <span>{leng == 'uzb' ? "Bizning jamoamiz" : "Our team"}</span>
-                    <span>{leng == 'uzb' ? "Biz bilan bog'lanish" : "Contact us"}</span>
-                    <select name="" id="" className="leng">
-                        <option value="UZB">UZB</option>
-                        <option value="ENG">ENG</option>
-                        <option value="RUS">RUS</option>
+                    <span>+998 97 603 64 64</span>
+                    <select name="language" id="language" className="leng" onChange={handleLanguageChange}>
+                        <option value="uzb">UZB</option>
+                        <option value="eng">ENG</option>
+                        <option value="rus">RUS</option>
                     </select>
                 </div>
             </div>
