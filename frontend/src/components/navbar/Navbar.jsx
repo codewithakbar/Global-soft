@@ -2,12 +2,21 @@ import logo from '../../access/images/logo.svg'
 import menu from '../../access/icons/menu.svg'
 import close from '../../access/icons/close.svg'
 import './nav.css'
-import { useState } from 'react'
+import { useContext, useState } from 'react'
+import { Context } from '../../context/Context'
 
 
 export default function Navbar() {
 
-    const [isOpen , setIsOpen] = useState(true)
+    const [isOpen, setIsOpen] = useState(true)
+
+    const { setLeng, leng } = useContext(Context)
+
+    const handleLanguageChange = (event) => {
+        const selectedLanguage = event.target.value;
+        setLeng(selectedLanguage);
+    };
+
 
     return (
         <>
@@ -15,19 +24,20 @@ export default function Navbar() {
                 <div className="navLeft">
                     <img src={logo} alt="" className="icon" />
                     <ul className="NavMenu">
-                        <li>About us</li>
-                        <li>Services</li>
-                        <li>Porfolio</li>
-                        <li>Our team</li>
+                        <li>{leng == 'uzb' ? "Biz haqimizda" : "About us"}</li>
+                        <li>{leng == 'uzb' ? "Xizmatlar" : "Services"}</li>
+                        <li>{leng == 'uzb' ? "Portfel" : "Porfolio"}</li>
+                        <li>{leng == 'uzb' ? "Bizning jamoamiz" : "Our team"}</li>
                     </ul>
                 </div>
                 <div className="navRight">
-                    <select name="" id="" className="leng">
-                        <option value="ENG">ENG</option>
-                        <option value="UZB">UZB</option>
-                        <option value="RUS">RUS</option>
+                    <select name="language" id="language" className="leng" onChange={handleLanguageChange}>
+                        {/* Har bir til uchun option elementi */}
+                        <option value="uzb">UZB</option>
+                        <option value="eng">ENG</option>
+                        <option value="rus">RUS</option>
                     </select>
-                    <button className="contactUs">Contact us</button>
+                    <button className="contactUs">{leng == 'uzb' ? "Biz bilan bog'lanish" : "Contact us"}</button>
                 </div>
             </div>
             <div className="navRes">
@@ -35,14 +45,14 @@ export default function Navbar() {
                 <button onClick={() => setIsOpen(false)}><img src={menu} alt="" /></button>
                 <div className={isOpen === true ? "menu close" : "menu"}>
                     <button onClick={() => setIsOpen(true)}><img src={close} alt="" /></button>
-                    <span>About us</span>
-                    <span>Services</span>
-                    <span>Porfolio</span>
-                    <span>Our team</span>
-                    <span>Contacts</span>
+                    <span>{leng == 'uzb' ? "Biz haqimizda" : "About us"}</span>
+                    <span>{leng == 'uzb' ? "Xizmatlar" : "Services"}</span>
+                    <span>{leng == 'uzb' ? "Portfel" : "Porfolio"}</span>
+                    <span>{leng == 'uzb' ? "Bizning jamoamiz" : "Our team"}</span>
+                    <span>{leng == 'uzb' ? "Biz bilan bog'lanish" : "Contact us"}</span>
                     <select name="" id="" className="leng">
-                        <option value="ENG">ENG</option>
                         <option value="UZB">UZB</option>
+                        <option value="ENG">ENG</option>
                         <option value="RUS">RUS</option>
                     </select>
                 </div>

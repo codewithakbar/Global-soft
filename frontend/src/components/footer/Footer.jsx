@@ -1,11 +1,16 @@
+import { useContext } from 'react'
 import './footer.css'
+import { Context } from '../../context/Context'
 
 export default function Footer() {
+
+    const {leng} = useContext(Context)
+
     return (
         <footer>
             <div className="footerText">
-                <span>Let’s turn your customers into fans.</span>
-                <button>Contact us</button>
+                <span>{leng == 'uzb' ? "Keling, mijozlaringizni muxlislarga aylantiraylik." : "Let’s turn your customers into fans."}</span>
+                <button>{leng == 'uzb' ? "Biz bilan bog'lanish" : "Contact us"}</button>
             </div>
             <div className="footer">
                 <div className="footerTop">
