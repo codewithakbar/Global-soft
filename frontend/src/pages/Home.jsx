@@ -8,48 +8,60 @@ import Services from '../components/services/Services'
 import Portfolio from '../components/portifolio/Portifolio'
 import { useContext } from 'react'
 import { Context } from '../context/Context'
+import LightSpeed from 'react-reveal/LightSpeed'
+import Bounce from 'react-reveal/Bounce'
+import Fade from 'react-reveal/Fade'
+import Pulse from 'react-reveal/Pulse'
 
 export default function Home() {
 
-    const {leng} = useContext(Context)
+    const { leng } = useContext(Context)
 
     return (
         <main>
             <header>
-                <div className="headerTitle">
-                    <h1>{leng == 'uzb' ? "Biz bilan kelajakdagi yechim" : "Future solution with us"}</h1>
-                    <p>{leng == 'uzb' ? "Companya biznes sahifasini shakilantirishda brendingizni ijtimoiy tarmoqlar mobile dasturlar orqali tanitishga va marketing sohasida zarur bo'lgan barcha xizmatlarni korsatadi!" :  "We create a website of any complexity you need using the best website programming languages and help you quickly realize your ideas."}</p>
-                    <button>{leng == 'uzb' ? "Boshlash" : "Get started"} <img src={rigthIcon} alt="" /></button>
-                </div>
+                <Pulse>
+                    <div className="headerTitle">
+                        <h1>{leng == 'uzb' ? "Biz bilan kelajakdagi yechim" : "Future solution with us"}</h1>
+                        <p>{leng == 'uzb' ? "Companya biznes sahifasini shakilantirishda brendingizni ijtimoiy tarmoqlar mobile dasturlar orqali tanitishga va marketing sohasida zarur bo'lgan barcha xizmatlarni korsatadi!" : "We create a website of any complexity you need using the best website programming languages and help you quickly realize your ideas."}</p>
+                        <button>{leng == 'uzb' ? "Boshlash" : "Get started"} <img src={rigthIcon} alt="" /></button>
+                    </div>
+                </Pulse>
             </header>
             <div className="client">
-                <div className="clientCard">
-                    <div className="texts">
-                        <h1>800+</h1>
-                        <span>{leng == 'uzb' ? "Loyiha bajarildi" : "Project done"}</span>
-                    </div>
-                    <p>{leng == 'uzb' ? "Brend maslahatchisi sifatida men kuchli va taniqli brend yaratish muhimligini tushunaman" : "As a brand consultant, I understand the importance of creating a strong and recognizable brand"}</p>
-                </div>
-                <div className="clientCard plus">
-                    <div className="texts">
-                        <h1>30+</h1>
-                        <span>{leng == 'uzb' ? "Jamoa a'zolari" : "Team members"}</span>
-                    </div>
-                    <img src={teamImg} alt="" />
-                </div>
-                <div className="clientCardPro">
-                    <div className="clientCardProLeft">
-                        <div className="clientCardProLeftTitle">
-                            <h1>100+</h1>
-                            <span>{leng == 'uzb' ? "Baxtli mijozlar" : "Happy clients"}</span>
+                <Bounce left>
+                    <div className="clientCard">
+                        <div className="texts">
+                            <h1>800+</h1>
+                            <span>{leng == 'uzb' ? "Loyiha bajarildi" : "Project done"}</span>
                         </div>
-                        <img src={clientImg1} alt="" />
+                        <p>{leng == 'uzb' ? "Brend maslahatchisi sifatida men kuchli va taniqli brend yaratish muhimligini tushunaman" : "As a brand consultant, I understand the importance of creating a strong and recognizable brand"}</p>
                     </div>
-                    <div className="clientCardProRight">
-                        <img src={clientImg2} alt="" />
-                        <p>{leng == "uzb" ? "Brend maslahatchisi sifatida men kuchli va taniqli brend yaratish muhimligini tushunaman" : "As a brand consultant, I understand the importance of creating a strong and recognizable brand"}</p>
+                </Bounce>
+                <Fade top>
+                    <div className="clientCard plus">
+                        <div className="texts">
+                            <h1>30+</h1>
+                            <span>{leng == 'uzb' ? "Jamoa a'zolari" : "Team members"}</span>
+                        </div>
+                        <img src={teamImg} alt="" />
                     </div>
-                </div>
+                </Fade>
+                <Bounce right>
+                    <div className="clientCardPro">
+                        <div className="clientCardProLeft">
+                            <div className="clientCardProLeftTitle">
+                                <h1>100+</h1>
+                                <span>{leng == 'uzb' ? "Baxtli mijozlar" : "Happy clients"}</span>
+                            </div>
+                            <img src={clientImg1} alt="" />
+                        </div>
+                        <div className="clientCardProRight">
+                            <img src={clientImg2} alt="" />
+                            <p>{leng == "uzb" ? "Brend maslahatchisi sifatida men kuchli va taniqli brend yaratish muhimligini tushunaman" : "As a brand consultant, I understand the importance of creating a strong and recognizable brand"}</p>
+                        </div>
+                    </div>
+                </Bounce>
             </div>
             <div className="works">
                 <div className="workInfoCard">
